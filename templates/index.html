@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL Query Optimizer</title>
+</head>
+<body>
+    <h1>Upload SQL File</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="sql_file" accept=".sql">
+        <button type="submit">Upload and Optimize</button>
+    </form>
+
+    <h2>Optimized SQL:</h2>
+    <pre id="optimized-sql"></pre>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
